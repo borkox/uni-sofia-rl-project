@@ -3,10 +3,11 @@
 Author: Borislav Markov
 
 ## Intro
-This project is for university course
+This project is for university class
 on Reinforcement Learning, FMI, Sofia University.
-Contains Actor Critic python implementation  for
-learning the Acrobot<sup>[3]</sup> OpenGym environment.
+It is a Actor-Critic python implementation for
+learning the Acrobot<sup>[3]</sup> from the 
+OpenGym environment.
 
 ## Environment Description <sup>[3]</sup>
 The Acrobot environment consists 
@@ -109,8 +110,12 @@ during the online learning. The learning cannot reach much above
 the target score of `-100`, which is normal. The threshold of
 `-100` means we win and the networks are learned well enough.
 
-
 ![Acrobot](doc/learning_scores.png)
+
+Start `eval-actor-critic-acrobot.py` to see the trained
+model in action. It only uses `outputs/acrobot-policy-model.bin`
+for the policy without the random element in the policy. During 
+the evaluation I removed the exploration element.
 
 ## Sources
  * [1] Reinforcement Learning: An Introduction, 2018, Richard S. Sutton and Andrew G. Barto,

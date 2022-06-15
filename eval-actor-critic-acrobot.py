@@ -52,7 +52,7 @@ policy_network.eval()
 
 scores = []
 # run episodes
-for episode in range(100):
+for episode in range(5):
 
     # init variables
     state = env.reset()
