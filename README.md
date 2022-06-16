@@ -9,6 +9,8 @@ It is a Actor-Critic python implementation for
 learning the Acrobot<sup>[3]</sup> from the 
 OpenGym environment.
 
+![Acrobot](doc/rl_interaction.png)
+
 ## Environment Description <sup>[3]</sup>
 The Acrobot environment consists 
 of two links connected linearly to form a chain,
@@ -122,3 +124,5 @@ the evaluation I removed the exploration element.
    [PDF] http://www.incompleteideas.net/book/the-book-2nd.html
  * [2] Actor-Critic: Implementing Actor-Critic Methods, Cheng Xi Tsou, https://medium.com/geekculture/actor-critic-implementing-actor-critic-methods-82efb998c273
  * [3] Acrobot, OpenGym, https://www.gymlibrary.ml/environments/classic_control/acrobot/
+ * [4] Pytorch documentation, https://pytorch.org/docs/stable/torch.html
+ * [5] Probability distributions - torch.distributions, https://pytorch.org/docs/stable/distributions.html
