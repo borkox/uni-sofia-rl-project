@@ -154,9 +154,8 @@ for episode in range(NUM_EPISODES):
         policy_loss = -lp * advantage
         policy_loss *= I
 
-        # Backpropagate policy
+        # Back-propagate policy
         policy_optimizer.zero_grad()
-        # policy_loss.backward(retain_graph=True)
         policy_loss.backward()
         policy_optimizer.step()
 
