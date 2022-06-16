@@ -1,8 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.distributions import Categorical
-
 import gym
 
 PATH_POLICY_MODEL = "outputs/acrobot-policy-model.bin"
