@@ -12,7 +12,7 @@ from collections import deque
 # https://www.gymlibrary.ml/environments/classic_control/acrobot/
 
 # discount factor for future utilities
-DISCOUNT_FACTOR = 0.99
+DISCOUNT_FACTOR = 0.95
 # number of episodes to run
 NUM_EPISODES = 1000
 # max steps per episode
@@ -22,7 +22,7 @@ MAX_STEPS = 500
 SOLVED_SCORE = -100
 # device to run model on
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-LEARN_RATE = 0.001
+LEARN_RATE = 0.002
 PATH_POLICY_MODEL = "outputs/acrobot-policy-model.bin"
 PATH_VALUE_MODEL = "outputs/acrobot-value-model.bin"
 PATH_SCORES = "outputs/scores-acrobot.txt"
